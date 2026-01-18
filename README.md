@@ -8,6 +8,6 @@ Deoarece fișierele FFmpeg sunt prea mari pentru GitHub, vă rog să urmați ace
 3. Rulați: `python app.py`
 
 Proiect realizat de:
-  Ivan Luca, Ghenciu Corina, Colan Bianca
+  Ivan Luca, Ghenciu Corina, Colan Bianca \n
 Grupa:
   443D

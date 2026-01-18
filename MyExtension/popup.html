@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { width: 320px; font-family: 'Segoe UI', sans-serif; padding: 15px; text-align: center; background: #f8f9fa; }
+        h2 { color: #333; margin-bottom: 5px; }
+        .radar { width: 40px; height: 40px; background: #3498db; border-radius: 50%; margin: 10px auto; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0% { transform: scale(0.9); opacity: 0.7; } 100% { transform: scale(1.1); opacity: 0; } }
+        
+        #resultBox { padding: 15px; border-radius: 10px; margin-top: 15px; font-weight: bold; font-size: 18px; display: none; }
+        
+        .details { text-align: left; margin-top: 15px; background: white; padding: 10px; border-radius: 8px; border: 1px solid #ddd; font-size: 14px; display: none; }
+        .row { display: flex; justify-content: space-between; margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .row:last-child { border-bottom: none; }
+        .score-val { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>🕵️ Deepfake Hunter</h2>
+    <p id="statusText">Se conectează la server...</p>
+    
+    <div id="loader" class="radar"></div>
+
+    <div id="resultBox"></div>
+
+    <div id="detailsBox" class="details">
+        <div class="row">
+            <span>📹 Video:</span>
+            <span id="vidScore" class="score-val">--%</span>
+        </div>
+        <div class="row">
+            <span>🎙️ Audio:</span>
+            <span id="audScore" class="score-val">--%</span>
+        </div>
+        <div class="row">
+            <span>🔗 Link:</span>
+            <span id="urlScore" class="score-val">--%</span>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

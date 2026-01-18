@@ -4,7 +4,8 @@ Acest proiect necesită FFmpeg pentru analiza audio.
 Deoarece fișierele FFmpeg sunt prea mari pentru GitHub, vă rog să urmați acești pași pentru rulare:
 
 1. Instalați librăriile: `pip install -r requirements.txt`
-2. Descărcați `ffmpeg.exe` și `ffprobe.exe` (versiunea Windows Essentials) și puneți-le în acest folder, lângă `app.py`.
+2. Descărcați `ffmpeg.exe` și `ffprobe.exe` (versiunea Windows Essentials) și puneți-le în acest folder, lângă `app.py`. 
+Acestea pot fi descarcate de pe acest link: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 3. Rulați: `python app.py`
 
 Proiect realizat de:
